@@ -176,11 +176,80 @@
 //}
 // 문제 : 정수 i가 가지고 있는 10을 double 형 변수에 넣고 해당 변수의 값을 다시 i에 넣는 코드를 작성해주세요.
 
-class Main {
-    public static void main(String[] args) {
-        int i = 10;
-        double d = i; // 여기선 자동형변환 허용
-        i = (int)d; // 여기선 자동형변환 불가능
-        System.out.println(i);
-    }
-}
+//class Main {
+//    public static void main(String[] args) {
+//        int i = 10;
+//        double d = i; // 여기선 자동형변환 허용
+//        i = (int)d; // 여기선 자동형변환 불가능
+//        System.out.println(i);
+//    }
+//}
+// 문제 : 자동차 리모콘이 페라리 객체를 가리키게 한 후 해당 리모콘이 가리키고 있는 객체를 다시 페라리 리모콘으로 가리키게(참조하게) 하는 코드를 작성해주세요.
+
+//class Main {
+//    public static void main(String[] args) {
+//        // 수정가능지역 시작
+//
+//        자동차 a자동차 = new 페라리();
+//        //페라리 a페라리 = (페라리)a자동차;
+//        ((페라리)a자동차).뚜껑이_열리다();
+//        //a페라리.뚜껑이_열리다();
+//        // 수정가능지역 끝
+//    }
+//}
+//class 자동차 {
+//    void 달리다() {}
+//    void 서다() {}
+//}
+//class 페라리 extends 자동차 {
+//    void 뚜껑이_열리다() {System.out.println("뚜껑이촤라락");}
+//}
+// 문제 : 아래가 실행되도록 해주세요.
+
+//class Main {
+//    public static void main(String[] args) {
+//        사람 a사람 = new 사람();
+//
+//        a사람.나이 = 20;
+//        a사람.a왼팔 = new 팔();
+//    }
+//}
+//
+//class 사람 {
+//    // 클래스안에 변수를 정의 할 수 있다.
+//    int 나이;
+//    팔 a왼팔;//팔객체를 조종할 수 있는 리모콘이 a왼팔에 들어간다.
+//}
+//class 팔{
+//
+//}
+// 문제 : 아래가 실행되도록 해주세요.
+
+//class Main {
+//    public static void main(String[] args) {
+//        전사 a전사 = new 전사();
+//
+//        a전사.나이 = 20;
+//        a전사.a무기 = new 활();
+//        a전사.a무기 = new 칼();
+//    }
+//}
+//class 전사{
+//    int 나이;
+//    무기 a무기;
+//}
+//abstract class 무기{
+//    void 공격(){
+//    }
+//}
+//class 활 extends 무기{
+//    void 공격(){
+//        System.out.println("활로 공격합니다.");
+//    }
+//
+//}
+//class 칼 extends 무기{
+//    void 공격(){
+//        System.out.println("칼로 공격합니다.");
+//    }
+//}

@@ -185,61 +185,54 @@
 // 힌트 : if ( a무기 == null ) { ... }
 
 //
+//
+// 문제 : 아래가 실행되도록 해주세요.
+// 조건 : 배열을 사용할 수 없습니다.
+
 class Main {
     public static void main(String[] args) {
-        전사 a전사1 = new 전사();
+        사람인력관리소 a사람인력관리소 = new 사람인력관리소();
 
-        a전사1.a왼손무기 = new 칼();
-        a전사1.공격();
-        // 출력 => 전사가 왼손으로 칼(을)를 사용합니다.
+        a사람인력관리소.add사람("홍길순", 33);
+        // 나이가 33살인 1번째 사람(홍길순)이 추가되었습니다.
+        a사람인력관리소.add사람("홍길동", 20);
+        // 나이가 20살인 2번째 사람(홍길동)이 추가되었습니다.
+        a사람인력관리소.add사람("임꺽정", 30);
+        // 나이가 30살인 3번째 사람(임꺽정)이 추가되었습니다.
 
-        전사 a전사2 = new 전사();
-        a전사2.a왼손무기 = new 창();
-        a전사2.a오른손무기 = new 도끼();
-        a전사2.공격();
-        // 출력 => 전사가 왼손으로 창(을)를 사용합니다.
-        // 출력 => 전사가 오른손으로 도끼(을)를 사용합니다.
-    }
-}
-class 전사{
-    무기 a왼손무기;
-    무기 a오른손무기;
-    void 공격(){
-        if(a왼손무기 != null){
-            System.out.print("전사가 왼손으로 ");
-            a왼손무기.작동();
-        }
-        if(a오른손무기 !=null){
-            System.out.print("전사가 오른손으로 ");
-            a오른손무기.작동();
-        }
-    }
-        }
-abstract class 무기{
-    abstract void 작동();
-}
-class 칼 extends 무기{
+        사람 a사람1 = a사람인력관리소.get사람(1);
+        a사람1.자기소개();
+        // 저는 1번, 홍길순, 33살 입니다.
 
-    @Override
-    void 작동() {
-        System.out.println("칼(을)를 사용합니다.");
+        사람 a사람2 = a사람인력관리소.get사람(2);
+        a사람2.자기소개();
+        // 저는 2번, 홍길동, 20살 입니다.
+
+        사람 a사람3 = a사람인력관리소.get사람(3);
+        a사람3.자기소개();
+        // 저는 3번, 임꺽정, 30살 입니다.
     }
 }
-class 활 extends 무기{
-    @Override
-    void 작동() {
-        System.out.println("활(을)를 사용합니다.");
+class 사람인력관리소 {
+    int i=1; //i는 사람인원수
+    int pi;
+    String name;
+    int age;
+    사람 a사람 = new 사람();
+    void add사람(String name, int age){
+        this.age = age;
+        this.name = name;
+        pi = i;
+        System.out.println("나이가 "+age+"살인 "+pi+"번째 사람("+name+")이 추가 되었습니다.");
+        i++;
     }
+    사람 get사람(int pi) {
+        this.pi = pi;
+        return this.name + this.age;
+    }
+class 사람{
+        void 자기소개(){
+            System.out.println("저는 "+pi+"번, "+ name + ", "+age+"살 입니다.");
+        }
 }
-class 창 extends 무기{
-    @Override
-    void 작동() {
-        System.out.println("창(을)를 사용합니다.");
-    }
-}
-class 도끼 extends 무기{
-    @Override
-    void 작동() {
-        System.out.println("도끼(을)를 사용합니다.");
-    }
 }

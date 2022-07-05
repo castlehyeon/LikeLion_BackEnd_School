@@ -32,26 +32,50 @@
 //
 // 출력 : 아래와 같이 출력되게 해주세요.
 
+//class Main {
+//    public static void main(String[] args) {
+//        사람 a사람 = new 사람();
+//        a사람.나이 = 10;
+//        a사람.a왼팔 = new 팔();
+//
+//        System.out.println(a사람.a왼팔.길이 + "cm");
+//        // 출력 : 100cm
+//    }
+//}
+//class 사람{
+//    int 나이;
+//    팔 a왼팔;
+//
+//
+//}
+//class 팔{
+//    int 길이;
+//
+//    public 팔() {
+//        this.길이 = 100;
+//    }
+//}
+// 출력 : 아래와 같이 출력되게 해주세요.
+
 class Main {
     public static void main(String[] args) {
-        사람 a사람 = new 사람();
-        a사람.나이 = 10;
-        a사람.a왼팔 = new 팔();
+        new 사람().걷다();
 
-        System.out.println(a사람.a왼팔.길이 + "cm");
+        System.out.println(new 사람().a왼팔.길이 + "cm");
         // 출력 : 100cm
     }
 }
-class 사람{
-    int 나이;
-    팔 a왼팔;
+class 사람 {
+    팔 a왼팔 = new 팔(); //생성자를 안넣었기 때문에 NullPoint에러 발생
 
+    public 사람() {
+        this.a왼팔.길이 = 100;
+    }
 
+    void 걷다() {
+        System.out.println("사람 걷는다.");
+    }
 }
 class 팔{
     int 길이;
-
-    public 팔() {
-        this.길이 = 100;
-    }
 }

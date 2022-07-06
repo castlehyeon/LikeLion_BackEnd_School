@@ -150,49 +150,117 @@
 
 //전사타입을 나눔으로써,공격메서드가 반복됨.
 //전사 클래스에서 무기멤버와 공격메서드 선언, 생성자만 사용
-class Main {
-    public static void main(String[] args) {
-        전사타입A a전사타입A = new 전사타입A();
-        a전사타입A.공격();
+//class Main {
+//    public static void main(String[] args) {
+//        전사타입A a전사타입A = new 전사타입A();
+//        a전사타입A.공격();
+//
+//        전사타입B a전사타입B = new 전사타입B();
+//        a전사타입B.공격();
+//
+//        전사타입C a전사타입C = new 전사타입C();
+//        a전사타입C.공격();
+//
+//        전사타입D a전사타입D = new 전사타입D();
+//        a전사타입D.공격();
+//    }
+//}
+//
+//abstract class 전사{
+//    String a무기;
+//
+//    public 전사() {
+//        this.a무기 = a무기;
+//    }
+//
+//    void 공격(){System.out.println(a무기+"로 공격");};
+//}
+//
+//class 전사타입A extends 전사 {
+//    public 전사타입A() {
+//        this.a무기 = "칼";
+//    }
+//}
+//class 전사타입B extends 전사 {
+//    public 전사타입B() {
+//        this.a무기 = "칼";
+//    }
+//}
+//class 전사타입C extends 전사 {
+//    public 전사타입C() {
+//        this.a무기 = "활";
+//    }
+//}
+//class 전사타입D extends 전사 {
+//    public 전사타입D() {
+//        this.a무기 = "활";
+//    }
+//}
 
-        전사타입B a전사타입B = new 전사타입B();
-        a전사타입B.공격();
+//다중 상속 불가.
+//장착. 즉 구성을 사용해서 청둥오리, 흰오리는 비행아이템을 가지고 있다. 고무오리, 고무2오리는 못나는비행아이템을 가지고 있다.
+//class Main {
+//    public static void main(String[] args) {
+//        청둥오리 a청둥오리 = new 청둥오리();
+//        a청둥오리.날다();
+//        // 출력 : 오리가 날개로 날아갑니다.
+//
+//        흰오리 a흰오리 = new 흰오리();
+//        a흰오리.날다();
+//        // 출력 : 오리가 날개로 날아갑니다.
+//
+//        고무오리 a고무오리 = new 고무오리();
+//        a고무오리.날다();
+//        // 출력 : 저는 날 수 없어요. ㅜㅠ
+//
+//        고무2오리 a고무2오리 = new 고무2오리();
+//        a고무2오리.날다();
+//        // 출력 : 저는 날 수 없어요. ㅜㅠ
+//    }
+//}
+//
+//class 오리 {
+//    아이템 현재아이템;
+//
+//    public 오리() {
+//        this.현재아이템 = new 비행아이템();
+//    }
+//
+//    void 날다() {
+//        현재아이템.사용();
+//    }
+//}
+//abstract class 아이템{
+//    abstract void 사용();
+//
+//}
+//class 비행아이템 extends 아이템{
+//    void 사용(){
+//        System.out.println("오리가 날개로 날아갑니다.");
+//    }
+//}
+//class 못나는비행아이템 extends 아이템{
+//    void 사용(){
+//        System.out.println("저는 날 수 없어요. ㅜㅠ");
+//    }
+//}
+//class 흰오리 extends 오리 {
+//
+//}
+//
+//class 청둥오리 extends 오리 {
+//
+//}
+//
+//class 고무오리 extends 오리 {
+//    public 고무오리() {
+//        this.현재아이템 = new 못나는비행아이템();
+//    }
+//}
+//
+//class 고무2오리 extends 오리 {
+//    public 고무2오리() {
+//        this.현재아이템 = new 못나는비행아이템();
+//    }
+//}
 
-        전사타입C a전사타입C = new 전사타입C();
-        a전사타입C.공격();
-
-        전사타입D a전사타입D = new 전사타입D();
-        a전사타입D.공격();
-    }
-}
-
-abstract class 전사{
-    String a무기;
-
-    public 전사() {
-        this.a무기 = a무기;
-    }
-
-    void 공격(){System.out.println(a무기+"로 공격");};
-}
-
-class 전사타입A extends 전사 {
-    public 전사타입A() {
-        this.a무기 = "칼";
-    }
-}
-class 전사타입B extends 전사 {
-    public 전사타입B() {
-        this.a무기 = "칼";
-    }
-}
-class 전사타입C extends 전사 {
-    public 전사타입C() {
-        this.a무기 = "활";
-    }
-}
-class 전사타입D extends 전사 {
-    public 전사타입D() {
-        this.a무기 = "활";
-    }
-}

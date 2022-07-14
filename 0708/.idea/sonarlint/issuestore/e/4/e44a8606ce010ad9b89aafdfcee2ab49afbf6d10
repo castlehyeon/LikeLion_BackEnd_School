@@ -1,0 +1,33 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³Æ¶¡üÿÿÿÿ8ÅèÉİ0
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùÖêúıÿÿÿÿ8ÆèÉİ0
+i	java:S101("MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ª»©«8ÍèÉİ0
+0
+java:S1220""Move this file to a named package.
+]	java:S125"<This block of commented-out lines of code should be removed.(ğÜßøÿÿÿÿ8ˆÈÉİ0
+H
+java:S2440"&Remove this instantiation of "ì‚¬ëŒ".(³Æ¶¡üÿÿÿÿ8úéÉİ0
+R
+java:S2209"5Change this instance-reference to a static reference.(èîˆ¤8±êÉİ0
+R
+java:S2209"5Change this instance-reference to a static reference.(˜™¸î8³êÉİ0
+R
+java:S2209"5Change this instance-reference to a static reference.(Ó­´8¶êÉİ0
+H
+java:S2440"&Remove this instantiation of "ì‚¬ëŒ".(ùÖêúıÿÿÿÿ8ºêÉİ0
+W
+java:S2209"5Change this instance-reference to a static reference.(¸ÇÌÁùÿÿÿÿ8½êÉİ0
+R
+java:S2209"5Change this instance-reference to a static reference.(Öª„8¾êÉİ0
+W
+java:S2209 "5Change this instance-reference to a static reference.(ş–ùÿÿÿÿ8ÁêÉİ0
+R
+java:S2209#"5Change this instance-reference to a static reference.(Ó­´8ÂêÉİ0
+n
+java:S3008)"QRename this field "ë‚˜ì´" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èŒÔ8ÃêÉİ0
+n
+java:S3008*"QRename this field "ì´ë¦„" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Œçœ8ÄêÉİ0
+W
+java:S1118(":Add a private constructor to hide the implicit public one.(ª»©«8ÒêÉİ0
+o	java:S100,"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë±€“ÿÿÿÿÿ8äêÉİ0
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(“ª½ùÿÿÿÿ8ñêÉİ0
